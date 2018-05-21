@@ -1,0 +1,20 @@
+# Switches
+- platform: mqtt
+  name: "Main Garage Door"
+  state_topic: "home/garage/control1"
+  command_topic: "home/garage/control/set1"
+  payload_on: "1"
+  payload_off: "0"
+  optimistic: false
+  qos: 0
+  retain: true
+  
+- platform: mqtt
+  name: "Third Garage Door"
+  state_topic: "home/garage/control2"
+  command_topic: "home/garage/control/set2"
+  payload_on: "1"
+  payload_off: "0"
+  optimistic: false
+  qos: 0
+  retain: true
