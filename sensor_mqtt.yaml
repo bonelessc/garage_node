@@ -1,0 +1,9 @@
+#Garage Sensors
+- platform: mqtt
+  state_topic: "home/garage/temperature"
+  name: "Garage Temperature"
+  unit_of_measurement: '°C'
+- platform: mqtt
+  state_topic: "home/garage/humidity"
+  name: "Garage Humidity"
+  unit_of_measurement: '%'
